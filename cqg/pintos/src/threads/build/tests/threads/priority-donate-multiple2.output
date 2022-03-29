@@ -1,0 +1,28 @@
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/q7pWTbBfDZ.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading............
+Kernel command line: -q run priority-donate-multiple2
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  434,176,000 loops/s.
+Boot complete.
+Executing 'priority-donate-multiple2':
+(priority-donate-multiple2) begin
+(priority-donate-multiple2) Main thread should have priority 34.  Actual priority: 34.
+(priority-donate-multiple2) Main thread should have priority 36.  Actual priority: 36.
+(priority-donate-multiple2) Main thread should have priority 36.  Actual priority: 36.
+(priority-donate-multiple2) Thread b acquired lock b.
+(priority-donate-multiple2) Thread b finished.
+(priority-donate-multiple2) Thread a acquired lock a.
+(priority-donate-multiple2) Thread a finished.
+(priority-donate-multiple2) Thread c finished.
+(priority-donate-multiple2) Threads b, a, c should have just finished, in that order.
+(priority-donate-multiple2) Main thread should have priority 31.  Actual priority: 31.
+(priority-donate-multiple2) end
+Execution of 'priority-donate-multiple2' complete.
+Timer: 33 ticks
+Thread: 0 idle ticks, 33 kernel ticks, 0 user ticks
+Console: 1125 characters output
+Keyboard: 0 keys pressed
+Powering off...

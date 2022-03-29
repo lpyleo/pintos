@@ -1,0 +1,31 @@
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/DFpRpJ2wlg.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading............
+Kernel command line: -q -mlfqs run mlfqs-nice-10
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  417,382,400 loops/s.
+Boot complete.
+Executing 'mlfqs-nice-10':
+(mlfqs-nice-10) begin
+(mlfqs-nice-10) Starting 10 threads...
+(mlfqs-nice-10) Starting threads took 0 ticks.
+(mlfqs-nice-10) Sleeping 40 seconds to let threads run, please wait...
+(mlfqs-nice-10) Thread 0 received 681 ticks.
+(mlfqs-nice-10) Thread 1 received 593 ticks.
+(mlfqs-nice-10) Thread 2 received 492 ticks.
+(mlfqs-nice-10) Thread 3 received 404 ticks.
+(mlfqs-nice-10) Thread 4 received 308 ticks.
+(mlfqs-nice-10) Thread 5 received 229 ticks.
+(mlfqs-nice-10) Thread 6 received 153 ticks.
+(mlfqs-nice-10) Thread 7 received 92 ticks.
+(mlfqs-nice-10) Thread 8 received 45 ticks.
+(mlfqs-nice-10) Thread 9 received 9 ticks.
+(mlfqs-nice-10) end
+Execution of 'mlfqs-nice-10' complete.
+Timer: 4024 ticks
+Thread: 1000 idle ticks, 3024 kernel ticks, 0 user ticks
+Console: 999 characters output
+Keyboard: 0 keys pressed
+Powering off...

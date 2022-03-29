@@ -1,0 +1,23 @@
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/vnq2wBj7Rb.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading............
+Kernel command line: -q -mlfqs run mlfqs-load-1
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  455,475,200 loops/s.
+Boot complete.
+Executing 'mlfqs-load-1':
+(mlfqs-load-1) begin
+(mlfqs-load-1) spinning for up to 45 seconds, please wait...
+(mlfqs-load-1) load average rose to 0.5 after 41 seconds
+(mlfqs-load-1) sleeping for another 10 seconds, please wait...
+(mlfqs-load-1) load average fell back below 0.5 (to 0.43)
+(mlfqs-load-1) PASS
+(mlfqs-load-1) end
+Execution of 'mlfqs-load-1' complete.
+Timer: 5200 ticks
+Thread: 1000 idle ticks, 4200 kernel ticks, 0 user ticks
+Console: 650 characters output
+Keyboard: 0 keys pressed
+Powering off...
